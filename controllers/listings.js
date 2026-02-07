@@ -96,7 +96,6 @@ module.exports.updateListing = async (req, res) => {
     { new: true }
   );
 
-  // ✅ Geocode again if location updated
   if (req.body.listing.location) {
     let response = await geocodingClient.forwardGeocode({
       query: req.body.listing.location,
@@ -106,7 +105,6 @@ module.exports.updateListing = async (req, res) => {
     listing.geometry = response.body.features[0].geometry;
   }
 
-  // ✅ Image update
   if (typeof req.file !== "undefined") {
     let url = req.file.path;
     let filename = req.file.filename;
