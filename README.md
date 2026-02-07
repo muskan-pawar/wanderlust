@@ -15,3 +15,14 @@ Wanderlust is a full-stack Airbnb-style web application built using Node.js, Exp
 
 ## 👩‍💻 Author
 Muskan Pawar
+
+## Screenshots
+
+### Signup Page
+![Signup](screenshots/signup.png)
+
+### Login Page
+![Login](screenshots/login.png)
+
+### Home Page
+![Home](screenshots/Home.png)
